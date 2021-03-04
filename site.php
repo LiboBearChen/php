@@ -3,26 +3,22 @@
 <head>
 </head>
 <body>
-<?php
-$a="WWWWWWWWewq";
-$b=22;
-echo"<h1>$a fdd  $b</h1>";
-$b="fewfewe";
-echo"<h1>$a fdd  $b</h1>";
-$b[0]="S";
-echo $b;
-echo "Qwefew"[0];
-
-echo str_replace("S","222222222222222",$b);
-echo"    ";
-echo substr($b,3);
-echo 3*3.33333;
-echo abs(-3432);
-?>
 <form action="site.php" method="get">
-Name:           <input type="text" name="name">
+Name:<input type="text" name="name">
 <input type="submit">
-<?php  ?>
+<?php  
+echo $_GET["name"]
+?>
+<br>
+<form action="site.php" method="get">
+Num1:<input type="number" name="num1">
+<br>
+Num2:<input type="number" name="num2">
+<input type="submit">
+<br>
+<?php  
+echo $_GET["num1"]+$_GET["num2"]
+?>
 </form>
 </body>
 </html>
