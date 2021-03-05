@@ -3,22 +3,19 @@
 <head>
 </head>
 <body>
-<form action="site.php" method="get">
-Name:<input type="text" name="name">
+
+<form action="site.php" method="post">
+<input type="checkbox" name="fruits[]">
 <input type="submit">
+</form>
+
 <?php  
-echo $_GET["name"]
+$q=array("ewew","few","wdwqad");
+$q[14]=231;
+echo $q[14];
+echo count($q);
 ?>
-<br>
-<form action="site.php" method="get">
-Num1:<input type="number" name="num1">
-<br>
-Num2:<input type="number" name="num2">
-<input type="submit">
-<br>
-<?php  
-echo $_GET["num1"]+$_GET["num2"]
-?>
+
 </form>
 </body>
 </html>
