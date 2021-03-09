@@ -4,16 +4,9 @@
 </head>
 <body>
 
-<?php  
-$i=1;
-while($i<=5){
-    echo "$i <br>";
-    $i++;
-}
-for($q=1;$q<=11;$q++){
-    echo "$q <br>";
-}
-?>
+<?php include "header.html" ?>
+<p>fwefewfeewf</p>
+<?php include "footer.html" ?>
 
 </form>
 </body>
