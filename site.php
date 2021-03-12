@@ -4,9 +4,13 @@
 </head>
 <body>
 
-<?php include "header.html" ?>
-<p>fwefewfeewf</p>
-<?php include "footer.html" ?>
+<?php 
+$title="adwaqw";
+$author="gegr";
+$wordCount=2312;
+include "header.php"; 
+
+?>
 
 </form>
 </body>
