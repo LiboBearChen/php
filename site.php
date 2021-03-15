@@ -5,35 +5,32 @@
 <body>
 
 <?php 
-class Book{
-    var $title;
-    var $author;
-    var $pages;
-
-    function __construct(){
-        echo "New book created <br>";
-    }
+class Letter{
 
     function a(){
-        if(($this->pages)>100){
-            return "more";
-        }
-        return "less";
+        echo "a<br>";
+    }
+
+    function b(){
+        echo "b<br>";
+    }
+
+    function c(){
+        echo "c<br>";
     }
 }
 
-$book1=new Book; 
-$book1->title="ddqw";
-$book1->pages=3243;
-$book2=new Book;
-$book2->pages=33;
-echo $book1->pages;
-echo "<br>";
-echo $book2->pages;
-echo "<br>";
-echo $book1->a();
-echo "<br>";
-echo $book2->a();
+class Letter1 extends Letter{
+    function d(){
+        echo "d<br>";
+    }
+}
+
+$l=new Letter();
+$l->a();
+$l1=new Letter1();
+$l1->a();
+$l1->d();
 ?>
 
 </form>
